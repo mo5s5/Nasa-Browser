@@ -8,7 +8,7 @@ export default function ArteroidSheet() {
     const { asteroidData } = useContext(Context)
     const [t] = useTranslation("global");
     const data = Object.values(asteroidData).flat(1);
-
+console.log(data);
     return (
         <div>
             <table cellSpacing={0}>
@@ -23,9 +23,9 @@ export default function ArteroidSheet() {
                     {data.map((item) => (
                         <tr key={item.id}>
                             <td>{item.name}</td>
-                            <td>{item.close_approach_data[0].miss_distance.kilometers}</td>
+                            <td>{Number(item.close_approach_data[0].miss_distance.kilometers).toFixed(1)}</td>
                             <td>{item.absolute_magnitude_h}</td>
-                            <td>{item.estimated_diameter.kilometers.estimated_diameter_max}</td>
+                            <td>{(item.estimated_diameter.kilometers.estimated_diameter_max).toFixed(4)}</td>
                             <td>{item.is_potentially_hazardous_asteroid ? t("nearbyAsteroid.yes") : t("nearbyAsteroid.no")
                             }</td>
                         </tr>
