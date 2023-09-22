@@ -20,7 +20,7 @@
         "diameter": "Diameter",
         "hazardous": "Is Potentially Hazardous",
         "yes": "Yes",
-        "No": "No"
+        "no": "No"
     },
     "submitPlanet": {
         "info": "If you find a new planet, you can add it to our catalog (reactive forms demo)",
