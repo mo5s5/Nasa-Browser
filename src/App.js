@@ -58,7 +58,6 @@ function App() {
           <span onClick={() => handleLanguage("ru")} >Ru</span>
           <span onClick={() => handleLanguage("hy")}>Hy</span>
         </div>
-
         <NavBar />
         <Routes>
           <Route path='/' element={<Home />} />

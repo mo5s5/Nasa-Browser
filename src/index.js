@@ -12,7 +12,7 @@ import i18next from 'i18next';
 
 i18next.init({
   interpolation: { escapevalue: false },
-  lng: "hy",
+  lng: "en",
   resources: {
     en: { global: global_en },
     ru: { global: global_ru },
