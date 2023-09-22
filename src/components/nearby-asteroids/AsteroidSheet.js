@@ -8,7 +8,6 @@ export default function ArteroidSheet() {
     const { asteroidData } = useContext(Context)
     const [t] = useTranslation("global");
     const data = Object.values(asteroidData).flat(1);
-console.log(data);
     return (
         <div>
             <table cellSpacing={0}>
