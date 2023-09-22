@@ -1,0 +1,14 @@
+.home {
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    background-image: url(../../cool-background.png);
+
+    h1 {
+        font-size: 5rem;
+        color: aliceblue;
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+    }
+}

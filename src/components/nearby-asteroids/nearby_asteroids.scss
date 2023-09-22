@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:3rem;
+
+    .date-section {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: .5rem;
+        height: 5rem;
+
+        .react-datepicker-wrapper {
+            .react-datepicker-input-container {
+                height: 3rem;
+                input {
+                    height: 100%;
+                }
+            }
+        }
+
+        .start {
+            margin-right: 1rem;
+        }
+
+        .end {
+            margin-left: 1rem;
+        }
+    }
+
+    .search {
+        background-color: $clr-primary;
+        color: aliceblue;
+        margin-left: 0.5rem;
+        font-size: medium;
+        padding: 0.1rem;
+        width: 5rem;
+        border-radius: 5px;
+    }
+
+    .alert {
+        color: red;
+    }
+}

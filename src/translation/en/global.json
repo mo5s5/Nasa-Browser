@@ -1,0 +1,41 @@
+{
+    "header": {
+        "title": "NASA Browser"
+    },
+    "topBar": {
+        "nearbyAsteroid": "Nearby Asteroids",
+        "astronomyPhoto": "Astronomy Photo Of The Day",
+        "submitNewPlanet": "Submit New Planet"
+    },
+    "nearbyAsteroid": {
+        "title": "Search for Asteroids based on their closest approach date to Earth",
+        "info": "You could select the range maximum for 7 days",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "search": "Search",
+        "rangeBigger": "Range is bigger then 7",
+        "name": "Name",
+        "distance": "Distance (km)",
+        "magnitude": "Absolute Magnitude",
+        "diameter": "Diameter",
+        "hazardous": "Is Potentially Hazardous",
+        "yes": "Yes",
+        "No": "No"
+    },
+    "submitPlanet": {
+        "info": "If you find a new planet, you can add it to our catalog (reactive forms demo)",
+        "planetName": "Planet Name",
+        "galaxyName": "Galaxy Name",
+        "diameter": "Diameter (km)",
+        "distance": "Distance(km)",
+        "yourName": "Your Name",
+        "planetRequired": "Planet field is required",
+        "galaxyRequired": "Galaxy field is required",
+        "diameterRequired": "Diameter field is required",
+        "distanceRequired": "Distance field is required",
+        "yourNameRequired": "Your Name field is required",
+        "emailRequired": "Email field is required",
+        "emailValid": "Please Enter Valid Email",
+        "nameValid": "Min length is 16 symbols"
+    }
+}
