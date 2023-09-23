@@ -40,6 +40,6 @@
         "emailRequired": "Email դաշտը պարտադիր է",
         "emailValid": "խնդրում ենք մուտքագրել իրական Email",
         "nameValid": "Առնվազն 16 սիմվոլ",
-        "Submit": "Հաստատել"
+        "submit": "Հաստատել"
     }
 }

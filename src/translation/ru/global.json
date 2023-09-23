@@ -40,6 +40,6 @@
         "emailRequired": "Email обязательно",
         "emailValid": "Пожалуйста вводите корректный Email",
         "nameValid": "Минимум 16 символов",
-        "Submit": "Подтвердить"
+        "submit": "Подтвердить"
     }
 }

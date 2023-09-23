@@ -40,6 +40,6 @@
         "emailRequired": "Email field is required",
         "emailValid": "Please Enter Valid Email",
         "nameValid": "Min length is 16 symbols",
-        "Submit": "Submit"
+        "submit": "Submit"
     }
 }
