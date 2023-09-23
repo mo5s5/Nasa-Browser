@@ -16,8 +16,8 @@ export default function NearbyAsteroids() {
     const endDayIso = endDate.toISOString().slice(0, 10);
     const { getNearbyAsteroids, responseOk } = useContext(Context);
     const [rangeBigger, setRangeBigger] = useState(false)
-   
-    
+
+
     const onSearch = (startDate, endDate) => {
         const oneDay = 1000 * 60 * 60 * 24;
         const rangeEnd = endDate.getTime();
@@ -32,12 +32,13 @@ export default function NearbyAsteroids() {
     }
 
     return (
-        <div className="content">
+        <div className="main">
             <h3>{t("nearbyAsteroid.title")}</h3>
             <h5>{t("nearbyAsteroid.info")}</h5>
             <div className="date-section">
                 <span>{t("nearbyAsteroid.startDate")}:</span>
                 <DatePicker
+                    popperPlacement="bottom"
                     selected={startDate}
                     onChange={(date) => setStartDate(date)}
                     dateFormat='dd/MM/yyyy'
@@ -45,6 +46,7 @@ export default function NearbyAsteroids() {
                     scrollableMonthYearDropdown />
                 <span>{t("nearbyAsteroid.endDate")}:</span>
                 <DatePicker
+                    popperPlacement="bottom"
                     selected={endDate}
                     onChange={(date) => setEndDate(date)}
                     selectsEnd
@@ -57,7 +59,7 @@ export default function NearbyAsteroids() {
                 <button className="search" onClick={() => onSearch(startDate, endDate)}>{t("nearbyAsteroid.search")}</button>
             </div>
             {rangeBigger ? <span className="alert">{t("nearbyAsteroid.rangeBigger")}</span> : <span></span>}
-            <div> {responseOk &&
+            <div className="content"> {responseOk &&
                 <AsteroidSheet />}
             </div>
         </div>

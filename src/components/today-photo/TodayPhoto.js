@@ -9,8 +9,10 @@ export default function TodayPhoto() {
     const [date, setDate] = useState(new Date());
 
     return (
-        <div className="content">
+        <div className="main">
             <DatePicker
+            wrapperClassName="calendar"
+            popperPlacement="bottom"
                 selected={date}
                 onChange={(date) => setDate(date)}
                 dateFormat='dd/MM/yyyy'

@@ -1,11 +1,19 @@
 @import '../../variables.scss';
 
 
-.content {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
+
+    h3 {
+        text-align: center;
+    }
+
+    h5 {
+        text-align: center;
+    }
 
     .date-section {
         display: flex;
@@ -18,6 +26,7 @@
         .react-datepicker-wrapper {
             .react-datepicker-input-container {
                 height: 3rem;
+
                 input {
                     height: 100%;
                 }
@@ -45,5 +54,45 @@
 
     .alert {
         color: red;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main {
+
+        h5 {
+            margin: 0 1rem 0 1rem;
+        }
+
+        .date-section {
+            flex-direction: column;
+
+            .search {
+                margin-left: 0;
+            }
+        }
+
+        .alert {
+            margin-top: 5rem;
+        }
+
+        .content {
+            margin-top: 5rem;
+            width: 90vw;
+
+            table {
+                tbody {
+                    th {
+                        padding: 3px;
+                        font-size: .6rem;
+                    }
+
+                    td {
+                        padding: 3px;
+                        font-size: .7rem;
+                    }
+                }
+            }
+        }
     }
 }

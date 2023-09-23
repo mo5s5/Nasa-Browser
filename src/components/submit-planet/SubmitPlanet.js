@@ -74,7 +74,7 @@ export default function SubmitNewPlanet() {
     }
 
     return (
-        <div className="content">
+        <div className="main">
             <h3>{t("submitPlanet.info")}</h3>
             <div className="planet-submit">
                 <form onSubmit={handlesubmit}>
@@ -85,7 +85,7 @@ export default function SubmitNewPlanet() {
                         value={formValue.planetName}
                         onChange={handlevalidation} />
                     <span>{formError.planetName}</span>
-                    <select
+                    <select className="select"
                         name="galaxy"
                         onChange={handlevalidation}
                         value={formValue.galaxy}>
@@ -133,7 +133,7 @@ export default function SubmitNewPlanet() {
                         onChange={handlevalidation}
                     />
                     <span>{formError.email}</span>
-                    <button> Submit</button>
+                    <button className="button">Submit</button>
                 </form>
             </div>
         </div>
