@@ -89,13 +89,16 @@ export default function SubmitNewPlanet() {
                         name="galaxy"
                         onChange={handlevalidation}
                         value={formValue.galaxy}>
-                        <option disabled="">{t("submitPlanet.galaxyName")}</option>
-                        <option value="Milky Way">Milky Way</option>
-                        <option value="Messier 83">Messier 83</option>
-                        <option value="Black Eye Galaxy">Black Eye Galaxy</option>
-                        <option value="Pinwheel">Pinwheel</option>
-                        <option value="Canis Major Dwarf">Canis Major Dwarf</option>
-                        <option value="Somewhere else...">Somewhere else...</option>
+                        <optgroup className=".optgroup">
+                            <option disabled="">{t("submitPlanet.galaxyName")}</option>
+                            <option value="Milky Way">Milky Way</option>
+                            <option value="Messier 83">Messier 83</option>
+                            <option value="Black Eye Galaxy">Black Eye Galaxy</option>
+                            <option value="Pinwheel">Pinwheel</option>
+                            <option value="Canis Major Dwarf">Canis Major Dwarf</option>
+                            <option value="Somewhere else...">Somewhere else...</option>
+                        </optgroup>
+
                     </select>
                     <span>{formError.galaxy}</span>
                     <input

@@ -20,7 +20,7 @@ export default function TodayPhoto() {
                 dateFormat='dd/MM/yyyy'
                 showYearDropdown
                 scrollableMonthYearDropdown />
-            <button className="search" onClick={() => fetchPhoto(date)}>{t("dayPhot.search")}</button>
+            <button className="search" onClick={() => fetchPhoto(date)}>{t("dayPhoto.search")}</button>
             {photoData ?
                 <div className="content">
                     <h1>{photoData.title}</h1>
