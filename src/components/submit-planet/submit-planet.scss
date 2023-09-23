@@ -31,8 +31,12 @@
         }
 
         .button {
+            background-color: $clr-primary;
+            color: aliceblue;
+            font-size: medium;
+            padding: 0.1rem;
             width: 5rem;
-            background-color: $clr-primary-background ;
+            border-radius: 5px;
         }
 
         span {
