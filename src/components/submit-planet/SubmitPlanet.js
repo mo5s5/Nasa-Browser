@@ -133,7 +133,7 @@ export default function SubmitNewPlanet() {
                         onChange={handlevalidation}
                     />
                     <span>{formError.email}</span>
-                    <button className="button">Submit</button>
+                    <button className="button">{t("submitPlanet.submit")}</button>
                 </form>
             </div>
         </div>

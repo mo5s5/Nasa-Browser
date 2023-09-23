@@ -7,6 +7,9 @@
         "astronomyPhoto": "Astronomy Photo Of The Day",
         "submitNewPlanet": "Submit New Planet"
     },
+    "dayPhoto": {
+        "search": "Search"
+    },
     "nearbyAsteroid": {
         "title": "Search for Asteroids based on their closest approach date to Earth",
         "info": "You could select the range maximum for 7 days",
@@ -36,6 +39,7 @@
         "yourNameRequired": "Your Name field is required",
         "emailRequired": "Email field is required",
         "emailValid": "Please Enter Valid Email",
-        "nameValid": "Min length is 16 symbols"
+        "nameValid": "Min length is 16 symbols",
+        "Submit": "Submit"
     }
 }
